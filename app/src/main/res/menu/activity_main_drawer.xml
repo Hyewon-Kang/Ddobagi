@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/message"
+            android:title="쪽지 보관함" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/microphone1"
+            android:title="녹음 보관함" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/chatting"
+            android:title="채팅" />
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/board"
+            android:title="내 주변" />
+        <item
+            android:id="@+id/nav_streetlamp"
+            android:icon="@drawable/streetlight"
+            android:title="가로등" />
+    </group>
+
+    <item android:title="부가기능">
+        <menu>
+            <item
+                android:id="@+id/nav_parent"
+                android:icon="@drawable/family"
+                android:title="보호자 등록" />
+            <item
+                android:id="@+id/nav_friend"
+                android:icon="@drawable/friendship"
+                android:title="친구 추가" />
+        </menu>
+    </item>
+
+    <item android:title="환경설정">
+        <menu>
+            <item
+                android:id="@+id/nav_send1"
+                android:icon="@drawable/ic_menu_send"
+                android:title="정보 수정" />
+        </menu>
+    </item>
+
+</menu>

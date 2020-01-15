@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".emergencysetting">
+    <LinearLayout
+        android:background="#E0E0E0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:src="@drawable/shake"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="1dp" />
+        <TextView
+            android:text="흔들기 횟수 설정"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="흔들기 횟수"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/shaken"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/shake3"
+                android:text="3회"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/shake5"
+                android:text="5회"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/shake10"
+                android:text="10회"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E0E0E0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:src="@drawable/pn"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="1dp" />
+        <TextView
+            android:text="긴급 연락처 등록"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/addn"
+            android:text="추가"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#E0E0E0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:src="@drawable/siren"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="1dp" />
+        <TextView
+            android:text="경고음 설정"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="위급상황 효과음"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:checked="true"
+                android:text="사이렌"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="진동"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="2px">
+    </View>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="효과음 소리크기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:progress="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="2px">
+    </View>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="플래쉬 사용"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="2px">
+    </View>
+</LinearLayout>

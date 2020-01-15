@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+tools:context=".write_ck">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="제목 : "
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/title_text_ck"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:enabled="false"
+                android:ems="10"
+                android:id="@+id/content_ck"
+                android:textColor="#000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:background="@drawable/bgbgbg"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/write_user_id"
+                android:layout_below="@+id/content_ck"
+                android:layout_alignParentRight="true"
+                android:text="작성자 : "
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"/>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_marginTop="20dp"
+                android:layout_alignStart="@+id/content_ck"
+                android:layout_below="@+id/content_ck"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/reply"
+                android:background="@drawable/bgbgbg"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/listView"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp" />
+
+            <Button
+                android:text="등록"
+                android:id="@+id/reply_add"
+                android:background="#ffbb00"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_alignTop="@+id/reply"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/rewrite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/reply"
+                android:background="#ffbb00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정하기"/>
+            <Button
+                android:id="@+id/delete"
+                android:layout_below="@+id/reply"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:background="#ffbb00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

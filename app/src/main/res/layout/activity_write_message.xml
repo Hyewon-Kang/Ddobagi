@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".checkMessage">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="친구에게 쪽지를 보내보세요 :)"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:text="받는 사람 :"
+            android:id="@+id/people"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="친구 아이디를 입력하세요."
+            android:id="@+id/to_id"
+            android:textSize="14dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/people"
+            android:layout_toRightOf="@+id/people"
+            android:layout_marginLeft="4dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"/>
+
+        <Button
+            android:text="검색"
+            android:id="@+id/search"
+            android:layout_alignTop="@+id/to_id"
+            android:layout_toRightOf="@+id/to_id"
+            android:layout_marginLeft="10dp"
+            android:background="#ffbb00"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="제목 : "
+            android:id="@+id/text_ck"
+            android:layout_below="@+id/people"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/title"
+            android:hint="제목을 입력해 주세요."
+            android:textSize="15dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/text_ck"
+            android:layout_toRightOf="@+id/text_ck"
+            android:background="@drawable/back"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:ems="10"
+            android:id="@+id/content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:background="@drawable/bgbgbg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_alignRight="@+id/content"
+            android:id="@+id/text_count"
+            android:hint="0/150자 "
+            android:layout_marginTop="10dp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:text="전송"
+            android:id="@+id/send"
+            android:layout_below="@+id/text_count"
+            android:background="#ffbb00"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="취소"
+            android:id="@+id/cancel"
+            android:layout_below="@+id/text_count"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffbb00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>

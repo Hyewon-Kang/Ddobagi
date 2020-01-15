@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".withdraw">
+
+    <TextView
+        android:text="또바기 탈퇴하기"
+        android:textColor="#000"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="탈퇴하기 버튼을 누르면 모든 정보가\n삭제되며, 복구할 수 없습니다.\n\n정말로 탈퇴하시겠습니까?"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/withdraw"
+            android:text="탈퇴하기"
+            android:background="#ffbb00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/back"
+            android:text="취소"
+            android:background="#ffbb00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

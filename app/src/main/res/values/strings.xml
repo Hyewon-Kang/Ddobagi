@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">maincode</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--<string name="daum_map_native_key"> 1887e3b2414de0d70ea66686b60e7646 </string>-->
+    <!--<string name="daum_map_rest_api_key"> e8854d4f1134f6ddda9eca28654ad3b2 </string>-->
+
+    <!-- ▲▲▲네이티브앱 키▲▲▲ -->
+    <string name="daum_map_native_key"> 1f680c3ccd40f490e2d3ce4a48af8af4 </string>
+    <!-- ▲▲▲REST API 키▲▲▲ -->
+    <string name="daum_map_rest_api_key"> 43a6b87949db3b2064a87154e8016a33 </string>
+
+</resources>

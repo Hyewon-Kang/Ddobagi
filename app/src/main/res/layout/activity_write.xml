@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        tools:context=".write">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="제목 : "
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/title_text"
+                android:hint="친구를 찾는 지역을 기재해주세요."
+                android:textSize="15dp"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"/>
+        </LinearLayout>
+
+        <EditText
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:ems="10"
+            android:id="@+id/content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="325dp"
+            android:background="@drawable/bgbgbg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_count"
+            android:layout_weight="0.5"
+            android:layout_marginRight="30dp"
+            android:hint="0/150자 "
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/input"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ffbb00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="올리기"/>
+            <Button
+                android:id="@+id/cancel"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:background="#ffbb00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".modify">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/space1"/>
+
+    <TextView
+        android:text="ID (이름) 님"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/space1"
+        android:textSize="25dp"
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="비밀번호 : "
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/text_id"
+        android:id="@+id/pw_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정할 비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:id="@+id/pw"
+        android:layout_toRightOf="@+id/pw_txt"
+        android:layout_below="@+id/text_id"
+        android:layout_marginTop="5dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="비밀번호 확인 : "
+        android:id="@+id/pw_txt_ck"
+        android:layout_below="@+id/pw_txt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정한 비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:id="@+id/pw_ck"
+        android:layout_toRightOf="@+id/pw_txt_ck"
+        android:layout_below="@+id/pw_txt"
+        android:layout_marginTop="11dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:text="이메일 : "
+    android:id="@+id/email_txt"
+    android:layout_below="@+id/pw_txt_ck"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="20dp"
+    android:textSize="17dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정할 이메일을 입력하세요"
+        android:id="@+id/email"
+        android:layout_toRightOf="@+id/email_txt"
+        android:layout_below="@+id/pw_txt_ck"
+        android:layout_marginTop="11dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:text="주소 : "
+    android:id="@+id/addr_txt"
+    android:layout_below="@+id/email_txt"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="20dp"
+    android:textSize="17dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정할 주소를 입력하세요"
+        android:id="@+id/addr"
+        android:layout_toRightOf="@+id/addr_txt"
+        android:layout_below="@+id/email_txt"
+        android:layout_marginTop="11dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="번호 : "
+        android:id="@+id/tel_txt"
+        android:layout_below="@+id/addr_txt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정할 번호를 입력하세요"
+        android:id="@+id/tel"
+        android:layout_toRightOf="@+id/tel_txt"
+        android:layout_below="@+id/addr_txt"
+        android:layout_marginTop="11dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="보호자 이름 : "
+        android:id="@+id/parent_name_txt"
+        android:layout_below="@+id/tel_txt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정할 보호자 이름을 입력하세요"
+        android:id="@+id/parent_name"
+        android:layout_toRightOf="@+id/parent_name_txt"
+        android:layout_below="@+id/tel_txt"
+        android:layout_marginTop="11dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="보호자 번호 : "
+        android:id="@+id/parent_txt"
+        android:layout_below="@+id/parent_name_txt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="수정할 보호자 번호를 입력하세요"
+        android:id="@+id/parent_tel"
+        android:layout_toRightOf="@+id/parent_txt"
+        android:layout_below="@+id/parent_name_txt"
+        android:layout_marginTop="11dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="수정하기"
+        android:id="@+id/btn_modify"
+        android:layout_below="@+id/parent_txt"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="60dp"
+        android:background="#ffbb00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="뒤로가기"
+        android:id="@+id/btn_back"
+        android:layout_toRightOf="@+id/btn_modify"
+        android:layout_below="@+id/parent_txt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:background="#ffbb00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="회원 탈퇴"
+        android:textSize="13dp"
+        android:id="@+id/wdraw"
+        android:textColor="#5F5E5E"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
